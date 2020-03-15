@@ -1,0 +1,955 @@
+Loading custom game "skillshotad" with map "skillshotad"
+CHostStateMgr::QueueNewRequest( Loading (skillshotad), 26 )
+SwitchToLoop levelload requested:  id [26] addons [skillshotad]
+CL:  IGameSystem::LoopDeactivateAllSystems {
+WriteSteamRemoteStorageFileAsync( "scripts/control_groups.txt" ) -> at 20020.661
+CL:  } IGameSystem::LoopDeactivateAllSystems done
+CL:  Disconnecting from server: NETWORK_DISCONNECT_LOOPDEACTIVATE
+Closing Steam Net Connection on socket 'client' to loopback:1, handle #3975933799 (2055 NETWORK_DISCONNECT_LOOPDEACTIVATE)
+Disassociating NetChan       client                      [-1] (unknown) from Steam Net Connection handle #3975933799
+[#3070270016 pipe] closed by peer
+Removing Steam Net Connection for loopback:1, handle #3975933799
+Closing 'client' poll group
+CL:  CNetworkStringTableContainer::RemoveAllTables:  removing 21 tables
+SV:  IGameSystem::LoopDeactivateAllSystems {
+HO:  IGameSystem::LoopDeactivateAllSystems {
+HO:  } IGameSystem::LoopDeactivateAllSystems done
+SV:  } IGameSystem::LoopDeactivateAllSystems done
+Closing Steam Net Connection on socket 'server' to loopback:0, handle #3070270016 (1000 CloseSocket)
+Disassociating NetChan          Vrx            loopback:0[1] (loopback:0) from Steam Net Connection handle #3070270016
+Removing Steam Net Connection for loopback:0, handle #3070270016
+Closing 'server' poll group
+SV:  Server shutting down: NETWORK_DISCONNECT_LOOPDEACTIVATE (55)
+CNetworkGameServerBase::SetServerState (ss_active -> ss_dead)
+SV:  Disconnect client 'Vrx' from server(1): NETWORK_DISCONNECT_SHUTDOWN
+Client 1 'Vrx' signon state SIGNONSTATE_FULL -> SIGNONSTATE_NONE
+SV:  CNetworkStringTableContainer::RemoveAllTables:  removing 21 tables
+WriteSteamRemoteStorageFileAsync( "voice_ban.dt" ) -> at 20020.871
+Unmounting addon 'skillshotad'
+Mounting addon 'skillshotad'
+ShutdownSceneCache: 0 vcd names remaining (64751 removed)
+Loaded 64751 .vcds from 183 vcdlist files
+ChangeGameUIState: DOTA_GAME_UI_STATE_DASHBOARD -> DOTA_GAME_UI_STATE_LOADING_SCREEN
+LoadingDisplay changed from NONE to LOADING (map="")
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 424 (was 3394)
+CAsyncWriteInProgress::OnComplete( "scripts/control_groups.txt" ) -> Success at 20021.498
+CAsyncWriteInProgress::OnComplete( "voice_ban.dt" ) -> Success at 20021.498
+Steam Net connection #3070270016 pipe closed by peer, reason 2055: NETWORK_DISCONNECT_LOOPDEACTIVATE
+CL:  CLoopModeLevelLoad::MaybeSwitchToGameLoop switching to "game" loopmode with addons (skillshotad)
+SwitchToLoop game requested:  id [26] addons [skillshotad]
+Cannot open D:\SteamLibrary\steamapps\common\dota 2 beta\game\dota_addons\skillshotad to calculate addon CRC!
+SteamGameServer_Init()
+SteamGameServer_Init() OK, logging on to Steam
+CNetworkSystem::InitGameServer: CSteamGameServerAPIContext::Init OK
+CNetworkGameServerBase::SetServerState (ss_dead -> ss_waitingforgamesessionmanifest)
+SV:  maxplayers set to 64
+Created poll group for socket 'server'
+AuthStatus (gameserver interface):  Waiting  (Waiting for Steam login)
+SteamNetworkingSockets lock held for 14.9ms.  (Performance warning).  CreateListenSocketP2P,AsyncCertRequest,BeginFetchNetworkConfig
+Network socket 'server' opened on port 27015
+Initializing script VM...
+...done
+CSpeechScriptBridge was double-initialized: tearing down and rebuilding
+SV:  Executing listen server config file
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_INIT'
+SV:  CGameRulesGameSystem::GameInit installed game rules
+SV:  Spawn Server: skillshotad
+CNetworkGameServerBase::SetServerState (ss_waitingforgamesessionmanifest -> ss_loading)
+SV:  Connection to Steam servers successful.
+SV:  ServerSteamID=[A:1:3806559243:14309] (90133453041007627).
+Logged on to Steam, set GC connection state to NO_SESSION
+Send msg 4007 (k_EMsgGCServerHello), 76 bytes
+Gameserver logged on to Steam, assigned identity steamid:90133453041007627
+AuthStatus (steamid:90133453041007627):  Attempting  (Requesting cert)
+OnSteamServersConnected()
+SV:  VAC secure mode is activated.
+AuthStatus (steamid:90133453041007627):  OK  (OK)
+Recv msg 4005 (k_EMsgGCServerWelcome), 11 bytes
+Received server welcome from GC.
+CMsgClientWelcome subscribed: 0 up-to-date, 0 out-of-date
+GC Connection established for server version 4029
+Server:  Inactive
+Client:  Disconnected
+----- Status -----
+  Queued   :  game
+@ Current  :  levelload
+CL:  CGameClientConnectPrerequisite status
+CL:  sequential     :  'CGameClientConnectPrerequisite'
+CL:  pending        :  1/6
+CL:  prerequisite   :  .'CWaitForGameServerStartupPrerequisite'
+CL:  waiting        :  ..waiting for IsServerRunning()
+CL:  pending        :  2/6
+CL:  prerequisite   :  .'CCreateGameClientPrerequisite'
+CL:  pending        :  3/6
+CL:  prerequisite   :  .'CConnectGameClientPrerequisite'
+CL:  pending        :  4/6
+CL:                 :  .'CLoadStartupResourcePrerequisite'
+CL:  waiting        :  ..waiting for startup resource list
+CL:  pending        :  5/6
+CL:  prerequisite   :  .'CLoadSpawnGroupsPrerequisite'
+CL:  firstspawngroup:  ..waiting for first spawn group
+CL:  pending        :  6/6
+CL:  prerequisite   :  .'CFinalizeConnectionPrerequisite'
+---
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+Error loading resource file "item_treasure_chest.vmdl_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "npc_dota_treasure_courier.vmdl_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "soundevents/game_sounds_heroes/game_sounds_doom_bringer.vsndevts_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "soundevents/game_sounds_heroes/game_sounds_shadow_shaman.vsndevts_c" (Error: ERROR_FILEOPEN)
+CNetworkGameServerBase::SetServerState (ss_loading -> ss_active)
+CL:  CWaitForGameServerStartupPrerequisite done waiting for server
+CL:  CCreateGameClientJob creating client connection to 'loopback'
+[#1981862455 pipe] connected
+[#3007599328 pipe] connected
+Created poll group for socket 'client'
+Connected loopback client=7620d237@loopback:1 <-> server=b34452e0@loopback:0
+Associating NetChan          Vrx            loopback:0[1] (loopback:0) with Steam Net Connection handle #3007599328
+Associating NetChan       client            loopback:1[0] (loopback:1) with Steam Net Connection handle #1981862455
+CL:  Connected to 'loopback:1'
+SV:  Sending server info to client 'Vrx' at loopback:0
+SV:  WriteInitialSpawnGroups sending 1 groups
+Game: "Dota 2"
+Map: "skillshotad"
+Players: 1 (0 bots) / 64 humans
+Build: 8530 (revision 5749439)
+Server Number: 26
+CL:  CNetworkGameClient::ProcessServerInfo
+Initializing script VM...
+...done
+CSpeechScriptBridge was double-initialized: tearing down and rebuilding
+C:Gamerules: entering state 'DOTA_GAMERULES_STATE_INIT'
+CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_INIT
+CDOTA_Hud_Main::DeleteGameEndScreen deleted GameEndContainer
+CL:  CGameRulesGameSystem::GameInit installed game rules
+ReadSteamRemoteStorageFile( bufOut, "voice_ban.dt" ) -> 0.001154 seconds
+Haptics Manager: LoadKV3FromFile failed: Missing file 'scripts/haptic_curves.txt'
+Haptics Manager: LoadAudio2HapticData - LoadKV3FromFile failed: Missing file 'scripts/haptics/audio2haptics_manifest.txt'
+SV:  "Vrx<1><[U:1:162065121]><>" STEAM USERID validated
+Recv msg 24 (k_ESOMsg_CacheSubscribed), 42 bytes
+Recv msg 24 (k_ESOMsg_CacheSubscribed), 35207 bytes
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 1761 (was 6351)
+Error loading resource file "panorama/images/items/agiessence_png.vtex_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "panorama/images/items/intessence_png.vtex_c" (Error: ERROR_FILEOPEN)
+Error loading resource file "panorama/images/items/stressence_png.vtex_c" (Error: ERROR_FILEOPEN)
+CL:  CGameClientConnectPrerequisite connection succeeded
+ChangeGameUIState: DOTA_GAME_UI_STATE_LOADING_SCREEN -> DOTA_GAME_UI_DOTA_INGAME
+SV:  IGameSystem::LoopActivateAllSystems {
+HO:  IGameSystem::LoopActivateAllSystems {
+HO:  } IGameSystem::LoopActivateAllSystems done
+CResponseSystem:  failed to load scripts/talker/response_rules_custom.txt
+SV:  } IGameSystem::LoopActivateAllSystems done
+Skillshotsad is loaded.
+GatherValidTeams - Found spawns for a total of 4 teams
+Final shuffled team list:
+ - 8 ( #DOTA_Custom3 )
+ - 9 ( #DOTA_Custom4 )
+ - 6 ( #DOTA_Custom1 )
+ - 7 ( #DOTA_Custom2 )
+Setting up teams:
+ - 0 ( Unassigned ) -> max players = 0
+ - 1 ( Spectator ) -> max players = 0
+ - 2 ( #DOTA_GoodGuys ) -> max players = 0
+ - 3 ( #DOTA_BadGuys ) -> max players = 0
+ - 4 ( Neutrals ) -> max players = 0
+ - 5 ( NoTeam ) -> max players = 0
+ - 6 ( #DOTA_Custom1 ) -> max players = 2
+ - 7 ( #DOTA_Custom2 ) -> max players = 2
+ - 8 ( #DOTA_Custom3 ) -> max players = 2
+ - 9 ( #DOTA_Custom4 ) -> max players = 2
+ - 10 ( #DOTA_Custom5 ) -> max players = 0
+ - 11 ( #DOTA_Custom6 ) -> max players = 0
+ - 12 ( #DOTA_Custom7 ) -> max players = 0
+ - 13 ( #DOTA_Custom8 ) -> max players = 0
+SetCustomHeroMaxLevel is a deprecated API.
+ConVarRef dota_server_side_animation_heroesonly doesn't point to an existing ConVar
+SV:  64 player server started
+SV:  addon='skillshotad'
+Send msg 4508 (k_EMsgGCGameServerInfo), 85 bytes
+--- Sent CMsgGameServerInfo to GC
+server_public_ip_addr: 3373356518
+server_private_ip_addr: 3232235536
+server_port: 27015
+server_tv_port: 0
+server_key: ""
+server_hibernation: false
+server_type: GAME
+server_region: 0
+server_loadavg: 0.560330868
+server_tv_broadcast_time: -120
+server_game_time: 0
+relay_slots_max: 0
+relays_connected: 0
+relay_clients_connected: 0
+tv_secret_code: 12264401265952647967
+server_version: 4029
+server_cluster: 0
+assigned_server_tv_port: 27020
+allow_custom_games: BOTH
+build_version: 4029
+tf_server_count: 1
+
+---
+CL:  IGameSystem::LoopActivateAllSystems {
+ReadSteamRemoteStorageFile( bufOut, "scripts/control_groups.txt" ) -> 0.000847 seconds
+CL:  } IGameSystem::LoopActivateAllSystems done
+Loading (skillshotad)
+CL:  CNetworkGameClient::OnSwitchLoopModeFinished( game : success )
+EntSelectSpawnPoint: no info_player_start on level
+SV:  Sending full update to client Vrx (reason:  initial update)
+CL:  Receiving uncompressed update from server
+  502: 653.314200 msec change 'OnGameModeEntityChanged()' on field m_hGameModeEntity(path=0/22) for ent dota_gamerules(C_DOTAGamerulesProxy) name=''
+  502: 66.906500 msec change 'OnWhitelistChanged()' on field m_bItemWhiteList(path=0/54/0) for ent dota_gamerules(C_DOTAGamerulesProxy) name=''
+      client            loopback:1[0]:  NetChan Setting Timeout to 30.00 seconds
+CL:  Signon traffic "client":  incoming 115.404 KB [49 pkts], outgoing 1.014 KB [44 pkts]
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 2211 (was 9661)
+         Vrx            loopback:0[1]:  NetChan Setting Timeout to 20.00 seconds
+CDOTA_PlayerResource: Adding player SteamID 76561198122330849 to slot 0 FakeClient=0 preferred slot = -1
+PR:SetPlayerName 0:[U:1:162065121] "Vrx"
+PR:OnFullyJoinedServer 0:[U:1:162065121]
+PR:SetLeaverStatus 0:[U:1:162065121] DOTA_LEAVER_NONE
+PR:SetConnectionState 0:[U:1:162065121] DOTA_CONNECTION_STATE_CONNECTED NETWORK_DISCONNECT_INVALID
+SV:  Vrx executing 150 user commands, backlog is 147 commands, processing took 0.05 msecs
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP'
+Stat Collection: GetDotaStats module is trying to init...
+Stat Collection: Attempting to register the match with GetDotaStats...
+Stat Collection: Flag was successfully set! {dedi:0}
+Stat Collection: Flag was successfully set! {map:skillshotad}
+Stat Collection: {"hostSteamID32":"162065121","modIdentifier":"6181abd798b97ecb1c5ad49b052a8d1b","schemaVersion":5}
+Stat Collection: Flag was successfully set! {loadTime:1}
+Send msg 4508 (k_EMsgGCGameServerInfo), 85 bytes
+--- Sent CMsgGameServerInfo to GC
+server_public_ip_addr: 3373356518
+server_private_ip_addr: 3232235536
+server_port: 27015
+server_tv_port: 0
+server_key: ""
+server_hibernation: false
+server_type: GAME
+server_region: 0
+server_loadavg: 0.270832151
+server_tv_broadcast_time: -120
+server_game_time: 2.0666666
+relay_slots_max: 0
+relays_connected: 0
+relay_clients_connected: 0
+tv_secret_code: 12264401265952647967
+server_version: 4029
+server_cluster: 0
+assigned_server_tv_port: 27020
+allow_custom_games: BOTH
+build_version: 4029
+tf_server_count: 1
+
+---
+SV:  Vrx executing 148 user commands, backlog is 145 commands, processing took 0.03 msecs
+SV:  Vrx executing 146 user commands, backlog is 143 commands, processing took 0.03 msecs
+C:Gamerules: entering state 'DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP'
+LoadingDisplay changed from LOADING to CUSTOM_GAME_SETUP (map="skillshotad")
+CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_CUSTOM_GAME_SETUP
+SV:  Vrx executing 144 user commands, backlog is 141 commands, processing took 0.03 msecs
+SV:  Vrx executing 142 user commands, backlog is 139 commands, processing took 0.02 msecs
+SV:  Vrx executing 140 user commands, backlog is 137 commands, processing took 0.02 msecs
+  904: 0.768200 msec change 'OnTeamChanged()' on field m_iPlayerTeam(path=1/0/2) for ent (C_DOTA_PlayerResource) name=''
+SV:  Vrx executing 138 user commands, backlog is 135 commands, processing took 0.03 msecs
+SV:  Vrx executing 136 user commands, backlog is 133 commands, processing took 0.02 msecs
+SV:  Vrx executing 134 user commands, backlog is 131 commands, processing took 0.02 msecs
+SV:  Vrx executing 132 user commands, backlog is 129 commands, processing took 0.02 msecs
+SV:  Vrx executing 130 user commands, backlog is 127 commands, processing took 0.02 msecs
+SV:  Vrx executing 128 user commands, backlog is 125 commands, processing took 0.02 msecs
+SV:  Vrx executing 126 user commands, backlog is 123 commands, processing took 0.03 msecs
+SV:  Vrx executing 124 user commands, backlog is 121 commands, processing took 0.03 msecs
+SV:  Vrx executing 122 user commands, backlog is 119 commands, processing took 0.03 msecs
+SV:  Vrx executing 120 user commands, backlog is 117 commands, processing took 0.03 msecs
+SV:  Vrx executing 118 user commands, backlog is 115 commands, processing took 0.02 msecs
+SV:  Vrx executing 116 user commands, backlog is 113 commands, processing took 0.03 msecs
+SV:  Vrx executing 114 user commands, backlog is 111 commands, processing took 0.07 msecs
+SV:  Vrx executing 112 user commands, backlog is 109 commands, processing took 0.03 msecs
+SV:  Vrx executing 110 user commands, backlog is 107 commands, processing took 0.02 msecs
+SV:  Vrx executing 108 user commands, backlog is 105 commands, processing took 0.03 msecs
+SV:  Vrx executing 106 user commands, backlog is 103 commands, processing took 0.03 msecs
+SV:  Vrx executing 104 user commands, backlog is 101 commands, processing took 0.03 msecs
+SV:  Vrx executing 102 user commands, backlog is 99 commands, processing took 0.03 msecs
+SV:  Vrx executing 100 user commands, backlog is 97 commands, processing took 0.03 msecs
+SV:  Vrx executing 98 user commands, backlog is 95 commands, processing took 0.02 msecs
+SV:  Vrx executing 96 user commands, backlog is 93 commands, processing took 0.03 msecs
+SV:  Vrx executing 94 user commands, backlog is 91 commands, processing took 0.03 msecs
+SV:  Vrx executing 92 user commands, backlog is 89 commands, processing took 0.03 msecs
+SV:  Vrx executing 90 user commands, backlog is 87 commands, processing took 0.03 msecs
+SV:  Vrx executing 88 user commands, backlog is 85 commands, processing took 0.03 msecs
+SV:  Vrx executing 86 user commands, backlog is 83 commands, processing took 0.04 msecs
+SV:  Vrx executing 84 user commands, backlog is 81 commands, processing took 0.02 msecs
+SV:  Vrx executing 82 user commands, backlog is 79 commands, processing took 0.03 msecs
+SV:  Vrx executing 80 user commands, backlog is 77 commands, processing took 0.03 msecs
+SV:  Vrx executing 78 user commands, backlog is 75 commands, processing took 0.04 msecs
+SV:  Vrx executing 76 user commands, backlog is 73 commands, processing took 0.03 msecs
+SV:  Vrx executing 74 user commands, backlog is 71 commands, processing took 0.18 msecs
+SV:  Vrx executing 72 user commands, backlog is 69 commands, processing took 0.17 msecs
+SV:  Vrx executing 70 user commands, backlog is 67 commands, processing took 0.03 msecs
+SV:  Vrx executing 68 user commands, backlog is 65 commands, processing took 0.02 msecs
+SV:  Vrx executing 66 user commands, backlog is 63 commands, processing took 0.03 msecs
+SV:  Vrx executing 64 user commands, backlog is 61 commands, processing took 0.03 msecs
+SV:  Vrx executing 62 user commands, backlog is 59 commands, processing took 0.02 msecs
+SV:  Vrx executing 60 user commands, backlog is 57 commands, processing took 0.03 msecs
+SV:  Vrx executing 58 user commands, backlog is 55 commands, processing took 0.01 msecs
+SV:  Vrx executing 56 user commands, backlog is 53 commands, processing took 0.03 msecs
+SV:  Vrx executing 54 user commands, backlog is 51 commands, processing took 0.03 msecs
+SV:  Vrx executing 52 user commands, backlog is 49 commands, processing took 0.03 msecs
+SV:  Vrx executing 50 user commands, backlog is 47 commands, processing took 0.01 msecs
+SV:  Vrx executing 48 user commands, backlog is 45 commands, processing took 0.03 msecs
+SV:  Vrx executing 46 user commands, backlog is 43 commands, processing took 0.03 msecs
+SV:  Vrx executing 44 user commands, backlog is 41 commands, processing took 0.04 msecs
+SV:  Vrx executing 42 user commands, backlog is 39 commands, processing took 0.03 msecs
+SV:  Vrx executing 40 user commands, backlog is 37 commands, processing took 0.05 msecs
+SV:  Vrx executing 38 user commands, backlog is 35 commands, processing took 0.02 msecs
+SV:  Vrx executing 36 user commands, backlog is 33 commands, processing took 0.03 msecs
+SV:  Vrx executing 34 user commands, backlog is 31 commands, processing took 0.03 msecs
+SV:  Vrx executing 32 user commands, backlog is 29 commands, processing took 0.03 msecs
+Stat Collection: Match was successfully registered with GetDotaStats!
+Stat Collection: Auth Key:  40N2MFL65L
+Stat Collection: MatchID:  45759266
+SV:  Vrx executing 30 user commands, backlog is 27 commands, processing took 0.24 msecs
+SV:  Vrx executing 28 user commands, backlog is 25 commands, processing took 0.03 msecs
+SV:  Vrx executing 26 user commands, backlog is 23 commands, processing took 0.01 msecs
+SV:  Vrx executing 24 user commands, backlog is 21 commands, processing took 0.03 msecs
+SV:  Vrx executing 22 user commands, backlog is 19 commands, processing took 0.03 msecs
+SV:  Vrx executing 20 user commands, backlog is 17 commands, processing took 0.03 msecs
+SV:  Vrx executing 18 user commands, backlog is 15 commands, processing took 0.03 msecs
+SV:  Vrx executing 16 user commands, backlog is 13 commands, processing took 0.03 msecs
+SV:  Vrx executing 14 user commands, backlog is 11 commands, processing took 0.03 msecs
+SV:  Vrx executing 12 user commands, backlog is 9 commands, processing took 0.03 msecs
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
+C:Gamerules: entering state 'DOTA_GAMERULES_STATE_HERO_SELECTION'
+LoadingDisplay changed from CUSTOM_GAME_SETUP to NONE (map="skillshotad")
+**** Unable to localize '#HeroPick' on panel 'TimerLabel'
+4
+CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_HERO_SELECTION
+PR:SetPossibleHeroSelection 0:[U:1:162065121] npc_dota_hero_invoker(74)
+  109: 0.636800 msec change 'OnSelectionDirty()' on field m_nPossibleHeroSelection(path=1/0/25) for ent dota_data_custom(C_DOTA_DataCustomTeam) name=''
+PR:SetSelectedHero 0:[U:1:162065121] npc_dota_hero_invoker(74)
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_STRATEGY_TIME'
+Send msg 8330 (k_EMsgServerToGCRequestPlayerRecentAccomplishments), 24 bytes
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_TEAM_SHOWCASE'
+Send msg 4508 (k_EMsgGCGameServerInfo), 85 bytes
+--- Sent CMsgGameServerInfo to GC
+server_public_ip_addr: 3373356518
+server_private_ip_addr: 3232235536
+server_port: 27015
+server_tv_port: 0
+server_key: ""
+server_hibernation: false
+server_type: GAME
+server_region: 0
+server_loadavg: 0.862938583
+server_tv_broadcast_time: -120
+server_game_time: -4.43323612
+relay_slots_max: 0
+relays_connected: 0
+relay_clients_connected: 0
+tv_secret_code: 12264401265952647967
+server_version: 4029
+server_cluster: 0
+assigned_server_tv_port: 27020
+allow_custom_games: BOTH
+build_version: 4029
+tf_server_count: 1
+
+---
+  904: 0.424500 msec change 'OnSelectionDirty()' on field m_nSelectedHeroID(path=0/0/0) for ent (C_DOTA_PlayerResource) name=''
+C:Gamerules: entering state 'DOTA_GAMERULES_STATE_TEAM_SHOWCASE'
+CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_TEAM_SHOWCASE
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_WAIT_FOR_MAP_TO_LOAD'
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
+m_flPreGameStartTime set to 15.90
+m_flStateTransitionTime set to 20.90
+exp table set
+Stat Collection: Attempting to send pregame stats...
+Stat Collection: Flag was successfully set! {numPlayers:1}
+Stat Collection: {"schemaVersion":5,"matchID":45759266,"flags":{"dedi":0,"numPlayers":1,"loadTime":1,"map":"skillshotad"},"modIdentifier":"6181abd798b97ecb1c5ad49b052a8d1b","authKey":"40N2MFL65L","dotaMatchID":"0","players":[{"connectionState":2,"steamID32":162065121,"playerName":"Vrx"}]}
+C:Gamerules: entering state 'DOTA_GAMERULES_STATE_PRE_GAME'
+Model models/heroes/invoker_kid/invoker_kid_5336712f.vseq: unable to find bone reference "bicep_L"
+Model models/heroes/invoker_kid/invoker_kid_5336712f.vseq: unable to find bone reference "bicep_R"
+**** Unable to localize '#Kills' on panel 'Goal'
+CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_PRE_GAME
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 806 (was 836)
+Recv msg 8331 (k_EMsgServerToGCRequestPlayerRecentAccomplishmentsResponse), 129 bytes
+table: 0x00250370
+dragon_knight_dragon_tail
+pudge_meat_hook
+beastmaster_wild_axes
+void_spirit_resonant_pulse
+skywrath_mage_mystic_flare
+spectre_dispersion
+mana regen set to 4.3
+health regen set to 3.1
+Model models/heroes/invoker_kid/invoker_kid_5336712f.vseq: unable to find bone reference "bicep_L"
+Model models/heroes/invoker_kid/invoker_kid_5336712f.vseq: unable to find bone reference "bicep_R"
+Stat Collection: Match pregame settings have been recorded!
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
+m_flGameStartTime set to 20.93
+C:Gamerules: entering state 'DOTA_GAMERULES_STATE_GAME_IN_PROGRESS'
+CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_GAME_IN_PROGRESS
+Send msg 4508 (k_EMsgGCGameServerInfo), 85 bytes
+--- Sent CMsgGameServerInfo to GC
+server_public_ip_addr: 3373356518
+server_private_ip_addr: 3232235536
+server_port: 27015
+server_tv_port: 0
+server_key: ""
+server_hibernation: false
+server_type: GAME
+server_region: 0
+server_loadavg: 1
+server_tv_broadcast_time: -120
+server_game_time: 0.0333328247
+relay_slots_max: 0
+relays_connected: 0
+relay_clients_connected: 0
+tv_secret_code: 12264401265952647967
+server_version: 4029
+server_cluster: 0
+assigned_server_tv_port: 27020
+allow_custom_games: BOTH
+build_version: 4029
+tf_server_count: 1
+
+---
+EntSelectSpawnPoint: no info_player_start on level
+CDOTA_PlayerResource: Adding player SteamID 90071996842377216 to slot 1 FakeClient=1 preferred slot = -1
+PR:SetPlayerName 1:[I:0:0] "Lionel Bot"
+PR:SetSelectedHero 1:[I:0:0] npc_dota_hero_axe(2)
+    2: 3.948100 msec change 'OnPlayerIDChanged()' on field m_iPlayerID(path=115) for ent player(C_DOTAPlayer) name=''
+  904: 0.448900 msec change 'OnSelectionDirty()' on field m_nSelectedHeroID(path=0/1/0) for ent (C_DOTA_PlayerResource) name=''
+  904: 0.623600 msec change 'OnTeamChanged()' on field m_iPlayerTeam(path=1/1/2) for ent (C_DOTA_PlayerResource) name=''
+  904: 0.252800 msec change 'OnFakeClientChanged()' on field m_bFakeClient(path=1/1/4) for ent (C_DOTA_PlayerResource) name=''
+  904: 0.271800 msec change 'OnPlayerSteamIDsChanged()' on field m_iPlayerSteamID(path=1/1/10) for ent (C_DOTA_PlayerResource) name=''
+Cannot parse AE_CL_CLOTH_ATTR (stiffen, 0.1, 0.45): expected function name instead of (null)
+table: 0x0022eba8
+doom_bringer_infernal_blade
+windrunner_powershot
+brewmaster_thunder_clap
+ember_spirit_flame_guard
+elder_titan_earth_splitter
+viper_corrosive_skin
+mana regen set to 5.2
+health regen set to 2.5
+Cannot parse AE_CL_CLOTH_ATTR (stiffen, 0.1, 0.45): expected function name instead of (null)
+Cannot parse AE_CL_CLOTH_ATTR (stiffen, 0.1, 0.45): expected function name instead of (null)
+SERVER: npc_dota_hero_axe(CDOTA_Unit_Hero_Axe) 'npc_dota_hero_axe' [829] thinking for 26.40 ms!!!
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+SERVER: npc_dota_hero_invoker(CDOTA_Unit_Hero_Invoker) 'npc_dota_hero_invoker' [140] thinking for 76.69 ms!!!
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment follow_overhead on model models/heroes/invoker_kid/invoker_kid.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+SERVER: npc_dota_hero_invoker(CDOTA_Unit_Hero_Invoker) 'npc_dota_hero_invoker' [140] thinking for 18.08 ms!!!
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+Script Runtime Error: scripts\vscripts\events.lua:115: attempt to index local 'krOwner' (a nil value)
+stack traceback:
+	scripts\vscripts\events.lua:115: in function <scripts\vscripts\events.lua:85>
+Client (account 162065121) tried to execute invalid order (20). Unit is dead.
+Client (account 162065121) tried to execute invalid order (20). Unit is dead.
+Client (account 162065121) tried to execute invalid order (20). Unit is dead.
+Client (account 162065121) tried to execute invalid order (20). Unit is dead.
+Client (account 162065121) tried to execute invalid order (20). Unit is dead.
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment follow_overhead on model models/heroes/invoker_kid/invoker_kid.vmdl
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+SERVER: npc_dota_hero_invoker(CDOTA_Unit_Hero_Invoker) 'npc_dota_hero_invoker' [140] thinking for 83.26 ms!!!
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+SERVER: npc_dota_hero_invoker(CDOTA_Unit_Hero_Invoker) 'npc_dota_hero_invoker' [140] thinking for 10.61 ms!!!
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+SERVER: npc_dota_hero_invoker(CDOTA_Unit_Hero_Invoker) 'npc_dota_hero_invoker' [140] thinking for 40.89 ms!!!
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+map is skillshotad
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/development/invisiblebox.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+SERVER: npc_dota_hero_invoker(CDOTA_Unit_Hero_Invoker) 'npc_dota_hero_invoker' [140] thinking for 284.89 ms!!!
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_origin on model models/courier/lockjaw/lockjaw_flying.vmdl
+Unknown Combat Class Defend during parse! (DOTA_COMBAT_CLASS_DEFEND_SOFT)
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_weapon_chain_rt on model models/heroes/invoker_kid/invoker_kid.vmdl
+CGameParticleManager::SetParticleControlEnt: Unable to lookup attachment attach_body on model models/heroes/invoker_kid/invoker_kid.vmdl
+Stat Collection: Attempting to send final stats...
+Stat Collection: {"rounds":{"0":{"players":[{"isWinner":"1","steamID32":162065121,"connectionState":2},{"isWinner":"0","steamID32":0,"connectionState":1}]}},"schemaVersion":5,"modIdentifier":"6181abd798b97ecb1c5ad49b052a8d1b","gameDuration":537,"matchID":45759266,"authKey":"40N2MFL65L"}
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_POST_GAME'
+CDOTAUserMsg_PlayerMMR check: lobbyType=-1, GameEndReason=0
+-------- GAME DATA --------
+{
+}
+
+-------- PLAYER DATA --------
+{
+   1                               	= table: 0x001d0020 (table)
+   {
+      pk                              	= 20 (number)
+      ph                              	= "invoker" (string)
+      pnw                             	= 12584 (number)
+      pl                              	= 14 (number)
+      steamID32                       	= 162065121 (number)
+      pa                              	= 0 (number)
+      il                              	= "force_boots,greater_crit,seer_stone" (string)
+      pd                              	= 1 (number)
+      plh                             	= 39 (number)
+   }
+   2                               	= table: 0x001d2c50 (table)
+   {
+      pk                              	= 0 (number)
+      ph                              	= "axe" (string)
+      pnw                             	= 1721 (number)
+      pl                              	= 5 (number)
+      steamID32                       	= 0 (number)
+      pa                              	= 0 (number)
+      il                              	= "" (string)
+      pd                              	= 20 (number)
+      plh                             	= 9 (number)
+   }
+}
+-------------------------------------
+CDOTAGCServerSystem::MatchSignOut gathering sign out stats. Duration in minutes = 8.599286
+   Player 76561198122330849 Account 162065121 TotalGold = 12434.000000 TotalXP = 10272.000000 nGoldPerMinute = 1445 nXPPerMinute = 1194
+Lobby was null when fetching PartID for player 0.
+   Player 0 Account 0 TotalGold = 871.000000 TotalXP = 2077.000000 nGoldPerMinute = 101 nXPPerMinute = 241
+Match signout:  duration = 515 (515.957153) good guys win = 1
+  Match start date: Sat Mar 14 16:01:18 2020
+Team 0 Player 0 m_unAccountID = 76561198122330849  Items: 294, 141, 291, 0, 0, 0, 0, 0, 0, 289
+  LastHit = 39  Deny = 0  ClaimedMiss = 0  ClaimedDeny = 0  Miss = 0
+  Level: 14 Gold: 2704  KDA: 20 / 1 / 0
+  Actual Player Damage: 20475 Actual Building Damage: 0 Actual Healing: 0
+  Scaled Player Damage: 21582 Scaled Building Damage: 0 Scaled Healing: 0
+  XP per min: 1445  Gold per min: 1194  Claimed Farm: 773  Support Gold 0
+Team 0 Player 1 m_unAccountID = 0  Items: 0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+  LastHit = 9  Deny = 0  ClaimedMiss = 1  ClaimedDeny = 0  Miss = 0
+  Level: 5 Gold: 1671  KDA: 0 / 20 / 0
+  Actual Player Damage: 3305 Actual Building Damage: 0 Actual Healing: 0
+  Scaled Player Damage: 3151 Scaled Building Damage: 0 Scaled Healing: 0
+  XP per min: 101  Gold per min: 241  Claimed Farm: 151  Support Gold 0
+KILLEATER: Signing out with 0 adjustments
+KILLEATER: Message has 0 player blocks
+SIGNOUT: Job created, Protobuf:
+duration: 515
+good_guys_win: true
+date: 1584212478
+num_players: 2
+teams {
+  players {
+    steam_id: 76561198122330849
+    hero_id: 74
+    items: 294
+    items: 141
+    items: 291
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 289
+    gold: 2704
+    kills: 20
+    deaths: 1
+    assists: 0
+    leaver_status: 0
+    last_hits: 39
+    denies: 0
+    gold_per_min: 1445
+    xp_per_minute: 1194
+    gold_spent: 11230
+    level: 14
+    scaled_hero_damage: 21582
+    scaled_tower_damage: 0
+    scaled_hero_healing: 0
+    time_last_seen: 0
+    support_ability_value: 3020
+    party_id: 0
+    claimed_farm_gold: 773
+    support_gold: 0
+    claimed_denies: 0
+    claimed_misses: 0
+    misses: 0
+    ability_upgrades {
+      ability: 5336
+      time: 16
+    }
+    ability_upgrades {
+      ability: 5075
+      time: 57
+    }
+    ability_upgrades {
+      ability: 5168
+      time: 58
+    }
+    ability_upgrades {
+      ability: 7710
+      time: 146
+    }
+    ability_upgrades {
+      ability: 5168
+      time: 192
+    }
+    ability_upgrades {
+      ability: 7710
+      time: 241
+    }
+    ability_upgrades {
+      ability: 5584
+      time: 272
+    }
+    ability_upgrades {
+      ability: 5075
+      time: 321
+    }
+    ability_upgrades {
+      ability: 5227
+      time: 347
+    }
+    ability_upgrades {
+      ability: 5336
+      time: 368
+    }
+    ability_upgrades {
+      ability: 5075
+      time: 400
+    }
+    ability_upgrades {
+      ability: 5168
+      time: 431
+    }
+    ability_upgrades {
+      ability: 5584
+      time: 454
+    }
+    ability_upgrades {
+      ability: 7710
+      time: 490
+    }
+    ability_upgrades {
+      ability: 7710
+      time: 517
+    }
+    net_worth: 12584
+    custom_game_data {
+      dota_team: 6
+      winner: true
+    }
+    match_player_flags: 0
+    hero_damage: 20475
+    tower_damage: 0
+    hero_healing: 0
+    hero_pick_order: 1
+    hero_was_randomed: false
+    lane: 1
+    is_using_plus_guide: false
+    hero_damage_received {
+      pre_reduction: 4498
+      post_reduction: 2390
+      damage_type: HERO_DAMAGE_PHYSICAL
+    }
+    hero_damage_received {
+      pre_reduction: 1464
+      post_reduction: 915
+      damage_type: HERO_DAMAGE_MAGICAL
+    }
+    hero_damage_received {
+      pre_reduction: 0
+      post_reduction: 0
+      damage_type: HERO_DAMAGE_PURE
+    }
+    hero_was_dota_plus_suggestion: false
+    seconds_dead: 7
+    gold_lost_to_death: 0
+    command_count: 1559
+    mouse_click_cast_command_count: 0
+    teleports_used: 0
+    cavern_crawl_map_variant: 0
+  }
+  players {
+    steam_id: 0
+    hero_id: 2
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    items: 0
+    gold: 1671
+    kills: 0
+    deaths: 20
+    assists: 0
+    leaver_status: 1
+    last_hits: 9
+    denies: 0
+    gold_per_min: 101
+    xp_per_minute: 241
+    gold_spent: 0
+    level: 5
+    scaled_hero_damage: 3151
+    scaled_tower_damage: 0
+    scaled_hero_healing: 0
+    time_last_seen: 0
+    support_ability_value: 200
+    party_id: 0
+    claimed_farm_gold: 151
+    support_gold: 0
+    claimed_denies: 0
+    claimed_misses: 1
+    misses: 0
+    ability_upgrades {
+      ability: 5220
+      time: 51
+    }
+    net_worth: 1721
+    custom_game_data {
+      dota_team: 7
+      winner: false
+    }
+    match_player_flags: 0
+    hero_damage: 3305
+    tower_damage: 0
+    hero_healing: 0
+    hero_pick_order: 2
+    hero_was_randomed: false
+    lane: 1
+    is_using_plus_guide: false
+    hero_damage_received {
+      pre_reduction: 19225
+      post_reduction: 16113
+      damage_type: HERO_DAMAGE_PHYSICAL
+    }
+    hero_damage_received {
+      pre_reduction: 2450
+      post_reduction: 1690
+      damage_type: HERO_DAMAGE_MAGICAL
+    }
+    hero_damage_received {
+      pre_reduction: 2576
+      post_reduction: 2672
+      damage_type: HERO_DAMAGE_PURE
+    }
+    hero_was_dota_plus_suggestion: false
+    seconds_dead: 59
+    gold_lost_to_death: 0
+    command_count: 0
+    mouse_click_cast_command_count: 0
+    teleports_used: 0
+    cavern_crawl_map_variant: 0
+  }
+}
+cluster: 0
+server_addr: "201.17.85.230:27015"
+first_blood_time: 51
+automatic_surrender: false
+server_version: 4029
+additional_msgs {
+  id: 7532
+  contents: "\010\001\020\003(\003"
+}
+social_feed_events {
+  account_id: 162065121
+  timestamp: 1584232204
+  event_type: 0
+  game_time: 438
+  replay_time: 464
+}
+match_flags: 0
+pre_game_duration: 5
+match_id: 0
+region_id: 4294967295
+players {
+  account_id: 162065121
+  ip: 2130706433
+  avg_ping_ms: 31
+  packet_loss: 0
+  ping_deviation: 15.5799723
+  full_resends: 0
+}
+cluster_id: 0
+Send msg 7494 (k_EMsgServerToGCMatchConnectionStats), 44 bytes
+  110: 0.420100 msec change 'OnSelectionDirty()' on field m_nPossibleHeroSelection(path=1/0/25) for ent dota_data_custom(C_DOTA_DataCustomTeam) name=''
+
+COMBAT SUMMARY
+--- Invoker ---
+  Total Damage Done: 20475
+    to Axe: 20475
+    - ability damage -
+    with dragon_knight_dragon_tail(1): 156
+    with pudge_meat_hook(2): 2672
+    with beastmaster_wild_axes(3): 1410
+    with void_spirit_resonant_pulse(4): 889
+    with skywrath_mage_mystic_flare(5): 645
+    with spectre_dispersion(6): 151
+    other damage done: 14552
+  Total Stuns: 13.50 seconds
+--- Axe ---
+  Total Damage Done: 3305
+    to Invoker: 3305
+    - ability damage -
+    with viper_corrosive_skin(6): 915
+    other damage done: 2390
+
+C:Gamerules: entering state 'DOTA_GAMERULES_STATE_POST_GAME'
+CDOTA_Hud_Main::EventGameRulesStateChanged DOTA_GAMERULES_STATE_POST_GAME
+CDOTA_Hud_Main::CreateGameEndScreen GetDefaultUIEnabled( DOTA_DEFAULT_UI_ENDGAME ) not true
+Stat Collection: Match stats were successfully recorded!
+S:Gamerules: entering state 'DOTA_GAMERULES_STATE_DISCONNECT'
+ReconnectInfo established for playerid=1
+PR:SetConnectionState 1:[I:0:0] DOTA_CONNECTION_STATE_DISCONNECTED NETWORK_DISCONNECT_SERVER_SHUTDOWN
+Setting player Lionel Bot to DOTA_LEAVER_DISCONNECTED
+CL:  disconnect script finish game
+CL:  Server disconnected: 2: NETWORK_DISCONNECT_DISCONNECT_BY_USER
+Closing Steam Net Connection on socket 'server' to loopback:0, handle #3007599328 (1000 CloseSocket)
+Disassociating NetChan          Vrx            loopback:0[1] (loopback:0) from Steam Net Connection handle #3007599328
+[#1981862455 pipe] closed by peer
+Removing Steam Net Connection for loopback:0, handle #3007599328
+Closing 'server' UDP listen socket
+Closing 'server' P2P listen socket
+Closing 'server' poll group
+SV:  Server shutting down: NETWORK_DISCONNECT_DISCONNECT_BY_USER (2)
+CNetworkGameServerBase::SetServerState (ss_active -> ss_dead)
+SV:  Disconnect client 'Vrx' from server(1): NETWORK_DISCONNECT_SHUTDOWN
+Client 1 'Vrx' signon state SIGNONSTATE_FULL -> SIGNONSTATE_NONE
+CSteam3ServerS1::ShutdownGameServer
+CNetworkSystem::ShutdownGameServer
+CL:  Disconnecting from server: NETWORK_DISCONNECT_DISCONNECT_BY_USER
+Closing Steam Net Connection on socket 'client' to loopback:1, handle #1981862455 (1002 NETWORK_DISCONNECT_DISCONNECT_BY_USER)
+Disassociating NetChan       client                      [-1] (unknown) from Steam Net Connection handle #1981862455
+Removing Steam Net Connection for loopback:1, handle #1981862455
+Closing 'client' poll group
+CHostStateMgr::QueueNewRequest( Idle (levelload), 27 )
+SwitchToLoop levelload requested:  id [27] addons []
+CL:  IGameSystem::LoopDeactivateAllSystems {
+WriteSteamRemoteStorageFileAsync( "scripts/control_groups.txt" ) -> at 20588.406
+CL:  } IGameSystem::LoopDeactivateAllSystems done
+CL:  CNetworkStringTableContainer::RemoveAllTables:  removing 21 tables
+SV:  IGameSystem::LoopDeactivateAllSystems {
+HO:  IGameSystem::LoopDeactivateAllSystems {
+HO:  } IGameSystem::LoopDeactivateAllSystems done
+SV:  } IGameSystem::LoopDeactivateAllSystems done
+SV:  CNetworkStringTableContainer::RemoveAllTables:  removing 21 tables
+**** Unable to localize '#GameUI_Language_Latam_Spanish' on panel 'latam'
+**** Unable to localize '#GameUI_Language_Vietnamese' on panel 'vietnamese'
+**** Unable to localize '#GameUI_Language_Latam_Spanish' on panel 'latam'
+**** Unable to localize '#GameUI_Language_Vietnamese' on panel 'vietnamese'
+CL:  CGameRulesGameSystem::GameShutdown uninstalled game rules
+CL:  CGameRules::CGameRules destructed
+WriteSteamRemoteStorageFileAsync( "voice_ban.dt" ) -> at 20589.263
+SV:  CGameRulesGameSystem::GameShutdown uninstalled game rules
+SV:  CGameRules::CGameRules destructed
+Can't CEngineServiceMgr::UpdateAddons to multiple addons in tools mode, tools restricting to skillshotad
+ChangeGameUIState: DOTA_GAME_UI_DOTA_INGAME -> DOTA_GAME_UI_STATE_LOADING_SCREEN
+LoadingDisplay changed from NONE to LOADING (map="")
+Idle (levelload)
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 21534 (was 21544)
+CAsyncWriteInProgress::OnComplete( "scripts/control_groups.txt" ) -> Success at 20589.463
+Recv msg 7666 (k_EMsgGCToClientPlayerBeaconState), 12 bytes
+CAsyncWriteInProgress::OnComplete( "voice_ban.dt" ) -> Success at 20589.464
+Steam Net connection #1981862455 pipe closed by peer, reason 1000: CloseSocket
+CL:  CLoopModeLevelLoad::MaybeSwitchToGameLoop switching to "game" loopmode with addons ()
+SwitchToLoop game requested:  id [27] addons []
+Send msg 2569 (k_EMsgClientToGCEquipItems), 97 bytes
+Send msg 7534 (k_EMsgClientToGCGetProfileCard), 22 bytes
+CNetworkGameServerBase::SetServerState (ss_dead -> ss_waitingforgamesessionmanifest)
+SV:  maxplayers set to 1
+Initializing script VM...
+...done
+CSpeechScriptBridge was double-initialized: tearing down and rebuilding
+SV:  Spawn Server: <empty>
+CNetworkGameServerBase::SetServerState (ss_waitingforgamesessionmanifest -> ss_loading)
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 20330 (was 25140)
+CNetworkGameServerBase::SetServerState (ss_loading -> ss_active)
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 19698 (was 20508)
+CL:  CWaitForGameServerStartupPrerequisite done waiting for server
+CL:  CCreateGameClientJob creating client connection to 'loopback'
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 14645 (was 19725)
+[#3165964847 pipe] connected
+[#1079775045 pipe] connected
+Created poll group for socket 'client'
+Created poll group for socket 'server'
+Connected loopback client=bcb4ca2f@loopback:1 <-> server=405c0f45@loopback:0
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 12417 (was 14687)
+Associating NetChan          Vrx            loopback:0[1] (loopback:0) with Steam Net Connection handle #1079775045
+Associating NetChan       client            loopback:1[0] (loopback:1) with Steam Net Connection handle #3165964847
+CL:  Connected to 'loopback:1'
+SV:  Sending server info to client 'Vrx' at loopback:0
+SV:  WriteInitialSpawnGroups sending 1 groups
+Game: "Dota 2"
+Map: "<empty>"
+Players: 1 (0 bots) / 1 humans
+Build: 8530 (revision 5749439)
+Server Number: 27
+CL:  CNetworkGameClient::ProcessServerInfo
+ReadSteamRemoteStorageFile( bufOut, "voice_ban.dt" ) -> 0.001203 seconds
+Haptics Manager: LoadKV3FromFile failed: Missing file 'scripts/haptic_curves.txt'
+Haptics Manager: LoadAudio2HapticData - LoadKV3FromFile failed: Missing file 'scripts/haptics/audio2haptics_manifest.txt'
+Recv msg 7535 (k_EMsgClientToGCGetProfileCardResponse), 129 bytes
+Recv msg 26 (k_ESOMsg_UpdateMultiple), 704 bytes
+Recv msg 2570 (k_EMsgClientToGCEquipItemsResponse), 26 bytes
+CL:  CGameClientConnectPrerequisite connection succeeded
+ChangeGameUIState: DOTA_GAME_UI_STATE_LOADING_SCREEN -> DOTA_GAME_UI_STATE_DASHBOARD
+LoadingDisplay changed from LOADING to NONE (map="<empty>")
+SV:  IGameSystem::LoopActivateAllSystems {
+HO:  IGameSystem::LoopActivateAllSystems {
+HO:  } IGameSystem::LoopActivateAllSystems done
+SV:  } IGameSystem::LoopActivateAllSystems done
+SV:  Game started
+CL:  IGameSystem::LoopActivateAllSystems {
+ReadSteamRemoteStorageFile( bufOut, "scripts/control_groups.txt" ) -> 0.000642 seconds
+CL:  } IGameSystem::LoopActivateAllSystems done
+CL:  CNetworkGameClient::OnSwitchLoopModeFinished( game : success )
+Send msg 7197 (k_EMsgGCMatchmakingStatsRequest), 8 bytes
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 11637 (was 13057)
+SV:  Sending full update to client Vrx (reason:  initial update)
+CL:  Receiving uncompressed update from server
+      client            loopback:1[0]:  NetChan Setting Timeout to 30.00 seconds
+CL:  Signon traffic "client":  incoming 43.426 KB [12 pkts], outgoing 909 bytes [9 pkts]
+Slow image load - http://cdn.dota2.com/apps/dota2/images/blogfiles/role_preferences.png (dimensions 1072x729, took 24 msec)
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 7334 (was 12074)
+         Vrx            loopback:0[1]:  NetChan Setting Timeout to 20.00 seconds
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 5265 (was 7395)
+DispatchAsyncEvent backlog, failed to dispatch all this frame. Remaining queue depth: 1745 (was 5395)
+Recv msg 7198 (k_EMsgGCMatchmakingStatsResponse), 322 bytes
+Recv msg 7667 (k_EMsgGCToClientPartyBeaconUpdate), 12 bytes
